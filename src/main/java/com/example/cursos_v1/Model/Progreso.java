@@ -17,11 +17,11 @@ public class Progreso implements Serializable {
     private Integer id;
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "usuario_id", referencedColumnName = "id")
+    @JoinColumn(name = "usuario_id")
     private Usuario usuario;
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "curso_id", referencedColumnName = "id")
+    @JoinColumn(name = "curso_id")
     private Curso curso;
 
     @Column(name = "estado", length = 20)

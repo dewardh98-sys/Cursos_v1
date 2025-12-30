@@ -4,6 +4,6 @@ services:
     environment:
       - 'POSTGRES_DB=portal_capacitaciones'
       - 'POSTGRES_PASSWORD=123'
-      - 'POSTGRES_USER=123'
+      - 'POSTGRES_USER=postgres'
     ports:
       - '5432'
